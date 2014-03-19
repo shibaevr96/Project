@@ -14,8 +14,8 @@ class helocopter(pygame.sprite.Sprite):
 		self.vx = 0.005
 		self.vy = -0.003
 		self.ax = 0.8
-		self.ay = 0.7
-		self.gy = 0.3
+		self.ay = 1.2
+		self.gy = 0.8
 		self.jump = 0
 		self.fly = 1
 		self.fuelmax = 100
@@ -53,7 +53,7 @@ class helocopter(pygame.sprite.Sprite):
 	def update(self):
 		if self.fly:
 			self.fuel -= 0.01
-			#print self.fuel
+			print self.fuel
 		self.angle = -45*(self.vx/15)
 		self.x += self.vx
 		self.y += self.vy
