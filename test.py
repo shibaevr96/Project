@@ -4,6 +4,8 @@ from random import randrange as rnd
 from pygame.locals import *
 pygame.init()
 
+#br1_test
+
 w = pygame.display.set_mode((900, 600))
 w.fill((10,150,150)) 
 
